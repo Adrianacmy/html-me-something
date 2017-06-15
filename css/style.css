@@ -1,0 +1,92 @@
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.navbar-brand{
+    letter-spacing: 0.2em;
+}
+
+.fa-twitter-square{
+    margin-right: 2em;
+    margin-left: 2em;
+}
+.banner-text h3 {
+    margin: 3em auto;
+    word-spacing: 0.5em;
+    letter-spacing: 0.2em;
+}
+
+.self-description{
+    font-size: 1.2em;
+}
+.self-description h3 {
+    margin:3em auto;
+}
+
+.my-projects .professional-education{
+    width: 50%;
+    /*display: inline-block;*/
+}
+
+#main{
+    margin-top: 6em;
+}
+.blog{
+   font-size: 1.3em;
+}
+
+.blog h3{
+    padding: 1em;
+}
+
+footer{
+    margin-top: 2em;
+    padding-top: 2em;
+    background-color:rgb(40, 40, 40);
+}
+.contact span{
+    position: relative;
+    color: white;
+}
+
+.contact,.footer-nav{
+    height: 10em;
+    line-height: 10em;
+
+}
+.footer-nav ul{
+    list-style: none;
+
+}
+
+.footer-nav{
+    background-color:rgb(20, 20, 20);
+
+}
+.footer-nav li{
+    display: inline;
+    margin-right: 2em;
+    margin-left: 2em;
+    letter-spacing: 0.2em;
+
+}
+/*
+.footer-nav span{
+    text-align: center;
+
+}*/
+
+.footer-nav a:link {
+    color: white;
+}
+
+.copywright{
+    color: white;
+    letter-spacing: 0.2em;
+    background-color:rgb(20, 20, 20);
+    /*word-spacing: 0.5em;*/
+    padding-bottom: 4em;
+}

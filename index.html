@@ -1,92 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Html-me-something</title>
-        <meta charset="UTF-8">
+        <title>htmle-me-something</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href=" " rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
+
     <body>
         <header>
-            <h2>Adrianacmy</h2>
-            <nav>
-                <ul>
-                    <li>home</li>
-                    <li>projects</li>
-                    <li>professional education</li>
-                    <li>blog</li>
-                </ul>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">ADRIANACMY</a>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">HOME</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="professional-education.html">PROFESSIONAL EDUCATION</a></li>
+                        <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">ME<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="blog.html">BLOG</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             </nav>
 
-
+            <div class="banner text-center container-fluid">
+                <img src="http://placekitten.com/g/2000/600" alt="banner" class="img-responsive">
+                <div class="row banner-text">
+                    <h3>CODING AND LEARNING FOR GOOD</h3>
+                    <span class="col-md-4"></span>
+                    <span class="col-md-4"><i class="fa fa-github fa-3x" aria-hidden="true"></i><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></span>
+                    <!--<span class="col-md-3"></i></span>-->
+                    <span class="col-md-4"></span>
+                </div>
+            </div>
         </header>
 
-        <main role="main">
 
-            <section class="projects">
-                <h1>featured work</h1>
-                <button>review</button>
-                <div>
-                    <h3>movie mountain</h3>
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </div>
-            </section>
+        <main role="main" class="container">
+            <article class="self-description text-center">
+                <h3>Super Girl</h3>
+            <p>At 12 years old, Kara Zor-El escapes doom on planet Krypton to find
+                protection on Earth with the Danver family, where she grows up in
+                the shadow of her foster sister, Alex, and learns to hide the
+                extraordinary powers she shares with her cousin, Superman. </p>
 
-            <section class="professional-education">
+            <p> Now an adult living in National City and working for media mogul Cat Grant,
+                Kara finds her days of keeping her abilities a secret are over when
+                super-secret agency head Hank Henshaw enlists her to help protect
+                the city's citizens from threats. Finally coming into her own, Kara
+                must juggle her new responsibilities with her very human
+                relationships.</p>
+            <hr>
+            </article>
 
-                <h1>professional-education</h1>
-                <button>view</button>
-                <div>
-                    <h3>software engineering</h3>
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </div>
+            <section id='main'>
+                <div class="row">
+                    <div class="col-md-6 projects text-center">
+                        <a href="projects.html">
+                            <img src="http://placekitten.com/g/460/230" alt="projects" class="img-responsive">
+                            <!--<div class="caption">-->
+                                <h4>part of my projects</h4>
+                            <!--</div>-->
+                            <button type="button" class="btn btn-success">more</button>
+                        </a>
+                    </div>
 
-                 <div>
-                    <h3>bridge modules</h3>
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </div>
-
-                <div>
-                    <h3>data science core</h3>
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </div>
-
-                <div>
-                    <h3>maching learning</h3>
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </div>
-
-
-            </section>
-
-            <section class="blog">
-                <article>
-                    <h3></h3>
-                    <p></p>
-                </article>
-            </section>
-
+                    <div class="col-md-6 professional-education text-center">
+                        <a href="professional-education.html">
+                            <img src="http://placekitten.com/g/460/230" alt="professional-education" class="img-responsive">
+                            <!--<div class="caption">-->
+                                <h4>my professional education</h4>
+                            <!--</div>-->
+                            <button type="button" class="btn btn-success">more</button>
+                        </a>
+                    </div>
+                </div><hr>
         </main>
 
-        <footer>
-            <contact></contact>
-            &copy;
-        </footer>
+        <footer class="container-fluid">
+            <div class="row contact text-center">
+                <span>
+                    <i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+                    <i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
+                </span>
+            </div>
 
+            <div class="row footer-nav text-center">
+                <ul>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="professional-education.html">PROFESSIONAL EDUCATION</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="copywright text-center">
+                &copy;2017 Adrianacmy. All rights reserved.
+            </div>
+
+        </footer>
     </body>
 </html>
